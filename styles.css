@@ -1,0 +1,50 @@
+.line{
+  position: absolute;
+  top: 400px;
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+.board{
+  position: absolute;
+  margin: 50px;
+  height:500px;
+  width: 350px;
+  border: 2px solid black;
+  overflow: hidden;
+}
+.button{
+  position: absolute;
+  top: -50px;
+  left: 20px;
+  height: 50px;
+  width: 50px;
+  transform: scale(.1);
+  border-radius: 50px;
+  background-color: blue;
+  opacity: 0;
+  transition: top 4s linear, transform 1s linear, opacity 1s linear;
+}
+.button.active{
+  top: 600px;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.button.button0{
+  left: 0px;
+  background-color: green;
+}
+
+.button.button1{
+  left: 100px;
+  background-color: violet;
+}
+
+.button.button2{
+  left: 200px;
+  background-color: yellow;
+}
+.button.button3{
+  background-color: red;
+  left: 300px
+}
