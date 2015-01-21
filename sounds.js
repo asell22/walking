@@ -15,7 +15,7 @@ var addButton = function(){
 }
 
 //Declare generateButtons to anonymous function. Recursively calls it self. Function called after 1.5 seconds. Declare variable x to calling addButton function.
-var generateButtons = function(){
+generateButtons = function(){
 
   setTimeout(function(){
     generateButtons();
@@ -30,32 +30,32 @@ var generateButtons = function(){
      soundButtons(x); // instead of logging what specific button crosses, we need the individual sounds to sound
     }, 2769)
 
-  }, 10)
+  }, 15)
 }
 setTimeout(function(){
   generateButtons()
 }, 1000)
 
-var t = 2000;
+// var t = 2000;
 
 var theme1 = new Howl({
-  urls: ['/audio/electric_bass_scrape_down.mp3'],
-  loop: false
+  urls: ['/audio/electric_bass_scrape_down.mp3']
+
 })
 
 var theme2 = new Howl({
-  urls: ['/audio/electric_bass_scrape_up.mp3'],
-  loop: false
+  urls: ['/audio/electric_bass_scrape_up.mp3']
+
 })
 
 var theme3 = new Howl({
-  urls: ['/audio/musical_organ_blues_riff.mp3'],
-  loop: false
+  urls: ['/audio/musical_organ_blues_riff.mp3']
+
 })
 
 var theme4 = new Howl({
-  urls: ['/audio/musical_violin_trill_short.mp3'],
-  loop: false
+  urls: ['/audio/musical_violin_trill_short.mp3']
+
 })
 
 var soundButtons = function(button){
